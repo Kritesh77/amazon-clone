@@ -11,12 +11,12 @@
   padding-right: 4%;
 }
 :root {
-  --orange: #f2a365;
+  --orange: rgba(191, 81, 31);
   --blue: #30475e;
   --red: #f40552;
   --black: #222831;
   --white: #f8f8f8;
-  --grey: #f2f3f5;
+  --grey: #565959;
   --lg-head: 2rem;
 }
 
@@ -38,7 +38,6 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-
 *,
 *::before,
 *::after {
@@ -262,7 +261,10 @@ header p {
 }
 
 /* Mainwrap */
-
+.mainwrap h1 {
+  padding: 15px;
+  color: #4e4e4e;
+}
 .mainwrap__banner {
   width: 100%;
   object-fit: cover;
@@ -276,7 +278,7 @@ header p {
 .product__row {
   display: flex;
   margin: 0 5px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .product {
@@ -334,4 +336,76 @@ header p {
   margin-top: 10px;
   border-radius: 8px;
   padding: 5px 8px;
+  cursor: pointer;
+}
+.checkout__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.checkout__priceSpan {
+  text-align: right;
+  font-weight: 200;
+  color: var(--grey);
+}
+.checkout_items {
+  margin-top: 28px !important;
+}
+.checkout_items,
+.checkout__total {
+  height: 100%;
+  margin: 14px 18px 18px;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+}
+.checkout__desc {
+  flex: 1;
+  padding: 0px 040px 0 10px;
+}
+.checkout__desc p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #007185;
+}
+.checkout__img {
+  width: 200px;
+  object-fit: contain;
+}
+.checkout__info {
+  align-items: flex-start;
+  padding: 12px 0;
+
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
+}
+.checkout__total {
+  margin: 14px 18px 18px 0;
+  flex: 1;
+}
+.checkout__price {
+  font-size: 20px;
+}
+.checkout__desc * {
+  padding: 5px 0;
+}
+.checkout__desc span {
+  display: block;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 600;
+}
+.checkout__desc select {
+  padding: 6px 11px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  font-size: 13px;
+}
+.checkout__subtotal h2 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+  padding: 5px 0;
 }
