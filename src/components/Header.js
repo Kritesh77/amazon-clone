@@ -1,15 +1,17 @@
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import { Link } from "react-router-dom";
 class Header extends React.Component {
   render() {
     return (
       <header className="header-desktop">
         <div className="logo">
-          <a href="./index.html">
+          <Link to="../">
             <h5 className="whitetext">amazon</h5>
-          </a>
+          </Link>
         </div>
+
         <div className="header__search">
           <input type="text" className="header__searchInput" />
           <SearchIcon className="header__searchIcon" />

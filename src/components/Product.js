@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import StarIcon from "@material-ui/icons/Star";
+import { Link } from "react-router-dom";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 export class Product extends Component {
   render() {
@@ -25,7 +26,9 @@ export class Product extends Component {
             <small>$</small>
             <strong>1,899</strong>
           </p>
-          <button>Add to cart</button>
+          <Link to="./checkout">
+            <button>Add to cart</button>
+          </Link>
         </div>
       </div>
     );

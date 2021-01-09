@@ -6,8 +6,7 @@ export default function checkout() {
       <div className="checkout__container">
         <div className="checkout_items">
           <h1>Shopping Cart</h1>
-          {/* <br /> */}
-          <h4 class="checkout__priceSpan ">Price</h4>
+          <h4 className="checkout__priceSpan ">Price</h4>
 
           <div className="checkout__info flex">
             <div className="checkout__img">
@@ -42,7 +41,11 @@ export default function checkout() {
           </div>
         </div>
         <div className="checkout__total">
-          <h1>Checkout</h1>
+          <h2 className="fw-400">
+            Subtotal(1 items):
+            <strong className="checkout__subtotalPrice">$1,999</strong>
+          </h2>
+          <button className="checkout__btn">Proceed to checkout</button>
         </div>
       </div>
     </div>
